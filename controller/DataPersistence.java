@@ -89,8 +89,9 @@ public class DataPersistence {
                     String location = parts[1];
                     String type = parts[2];
                     boolean occupied = Boolean.parseBoolean(parts[3]);
-                    
+
                     Bed bed = new Bed(bedId, location, type);
+                    bed.setOccupied(occupied);  // Use the new setter to properly set occupied status
                     beds.add(bed);
                 }
             }
@@ -131,11 +132,11 @@ public class DataPersistence {
                     int criticality = Integer.parseInt(parts[2]);
                     long arrivalTime = Long.parseLong(parts[3]);
                     long dischargeTime = Long.parseLong(parts[4]);
-                    
+
                     Patient patient = new Patient(patientId, name, criticality);
                     patient.setArrivalTime(arrivalTime);
-                    patient.setDischarged(true);
-                    
+                    patient.setDischargeTime(dischargeTime); // Use the new setter to properly set discharge time
+
                     patients.add(patient);
                 }
             }

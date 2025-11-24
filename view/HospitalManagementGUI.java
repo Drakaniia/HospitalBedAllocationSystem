@@ -3,11 +3,7 @@ package view;
 import javax.swing.*;
 import javax.swing.UIManager.LookAndFeelInfo;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
-import controller.HospitalBedAllocator;
-import model.Patient;
 import model.Bed;
 
 public class HospitalManagementGUI extends JFrame {
