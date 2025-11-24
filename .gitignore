@@ -1,0 +1,29 @@
+# Compiled Java files
+*.class
+
+# Log files
+*.log
+*.out
+
+# OS generated files
+.DS_Store
+Thumbs.db
+.DS_Store?
+ehthumbs.db
+Icon?
+desktop.ini
+
+# Data files (if any sensitive data is stored)
+*.txt
+*.json
+*.data
+
+# IDE related files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+tmp/
+temp/
