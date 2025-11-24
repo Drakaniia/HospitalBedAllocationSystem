@@ -1,5 +1,9 @@
+package controller;
+
 import java.util.ArrayList;
 import java.util.List;
+import model.Patient;
+import model.Bed;
 
 public class HospitalBedAllocator {
     private MinHeap patientHeap;

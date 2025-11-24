@@ -1,17 +1,22 @@
+package view;
+
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.util.List;
+import controller.HospitalBedAllocator;
+import model.Patient;
+import model.Bed;
 
 public class ReportPanel extends JPanel {
-    private HospitalBedAllocator allocator;
+    private controller.HospitalBedAllocator allocator;
     private JTextArea statsArea;
     private JTable patientTable;
     private DefaultTableModel tableModel;
     private JComboBox<String> reportTypeCombo;
     private JButton generateButton;
 
-    public ReportPanel(HospitalBedAllocator allocator) {
+    public ReportPanel(controller.HospitalBedAllocator allocator) {
         this.allocator = allocator;
         initializeComponents();
         layoutComponents();

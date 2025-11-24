@@ -1,14 +1,20 @@
+package view;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
+import controller.HospitalBedAllocator;
+import controller.MinHeap;
+import model.Patient;
+import model.Bed;
 
 public class HeapVisualizationPanel extends JPanel {
-    private HospitalBedAllocator allocator;
+    private controller.HospitalBedAllocator allocator;
     private JTextArea heapDisplayArea;
     private JButton refreshButton;
     private HeapVisualizationCanvas canvas;
 
-    public HeapVisualizationPanel(HospitalBedAllocator allocator) {
+    public HeapVisualizationPanel(controller.HospitalBedAllocator allocator) {
         this.allocator = allocator;
         initializeComponents();
         layoutComponents();
@@ -126,11 +132,11 @@ public class HeapVisualizationPanel extends JPanel {
 
 // Separate class for graphical visualization
 class HeapVisualizationCanvas extends JPanel {
-    private HospitalBedAllocator allocator;
-    private MinHeap heap;
-    private List<Patient> heapList;
-    
-    public HeapVisualizationCanvas(HospitalBedAllocator allocator) {
+    private controller.HospitalBedAllocator allocator;
+    private controller.MinHeap heap;
+    private List<model.Patient> heapList;
+
+    public HeapVisualizationCanvas(controller.HospitalBedAllocator allocator) {
         this.allocator = allocator;
         setPreferredSize(new Dimension(800, 400));
         setBackground(Color.WHITE);

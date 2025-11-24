@@ -22,7 +22,10 @@ if %errorlevel% neq 0 (
 )
 
 echo Compiling the GUI Hospital Management System...
-javac *.java
+REM Compile all Java files with proper package structure
+for /r %%f in (*.java) do (
+    javac "%%f"
+)
 
 if %errorlevel% neq 0 (
     echo Compilation failed!
@@ -37,5 +40,5 @@ echo.
 echo The GUI application will open in a new window.
 echo.
 
-java HospitalManagementGUI
+java view.HospitalManagementGUI
 pause

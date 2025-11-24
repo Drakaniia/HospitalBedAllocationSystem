@@ -1,5 +1,9 @@
+package controller;
+
 import java.io.*;
 import java.util.*;
+import model.Patient;
+import model.Bed;
 
 public class DataPersistence {
     private static final String PATIENTS_FILE = "patients.txt";

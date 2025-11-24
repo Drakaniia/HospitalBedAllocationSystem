@@ -1,5 +1,8 @@
+package controller;
+
 import java.util.ArrayList;
 import java.util.List;
+import model.Patient;
 
 public class MinHeap {
     private List<Patient> heap;

@@ -1,12 +1,17 @@
+package view;
+
 import javax.swing.*;
 import javax.swing.UIManager.LookAndFeelInfo;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
+import controller.HospitalBedAllocator;
+import model.Patient;
+import model.Bed;
 
 public class HospitalManagementGUI extends JFrame {
-    private HospitalBedAllocator allocator;
+    private controller.HospitalBedAllocator allocator;
     private JTabbedPane tabbedPane;
     private PatientManagementPanel patientPanel;
     private BedManagementPanel bedPanel;
@@ -14,7 +19,7 @@ public class HospitalManagementGUI extends JFrame {
     private HeapVisualizationPanel heapPanel;
 
     public HospitalManagementGUI() {
-        allocator = new HospitalBedAllocator();
+        allocator = new controller.HospitalBedAllocator();
         
         // Initialize the demo data
         initializeDemoData();

@@ -19,7 +19,8 @@ if ! command -v javac &> /dev/null; then
 fi
 
 echo "Compiling the GUI Hospital Management System..."
-javac *.java
+# Compile all Java files recursively with proper package structure
+find . -name "*.java" -exec javac {} \;
 
 if [ $? -ne 0 ]; then
     echo "Compilation failed!"
@@ -33,4 +34,4 @@ echo ""
 echo "The GUI application will open in a new window."
 echo ""
 
-java HospitalManagementGUI
+java view.HospitalManagementGUI

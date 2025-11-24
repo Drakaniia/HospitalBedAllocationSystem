@@ -1,10 +1,15 @@
+package view;
+
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.util.List;
+import controller.HospitalBedAllocator;
+import model.Bed;
+import model.Patient;
 
 public class BedManagementPanel extends JPanel {
-    private HospitalBedAllocator allocator;
+    private controller.HospitalBedAllocator allocator;
     private JTable bedTable;
     private DefaultTableModel tableModel;
     private JTextField bedIdField, locationField;
@@ -12,7 +17,7 @@ public class BedManagementPanel extends JPanel {
     private JButton addButton, releaseButton, searchButton;
     private JTextField searchTypeField;
 
-    public BedManagementPanel(HospitalBedAllocator allocator) {
+    public BedManagementPanel(controller.HospitalBedAllocator allocator) {
         this.allocator = allocator;
         initializeComponents();
         layoutComponents();

@@ -79,16 +79,19 @@ Both scripts will automatically compile all Java files and run the GUI Hospital 
 
 ```
 HospitalBedAllocationSystem/
-├── HospitalManagementGUI.java       # Main GUI entry point with tabbed interface
-├── PatientManagementPanel.java      # Patient management GUI panel
-├── BedManagementPanel.java          # Bed management GUI panel
-├── ReportPanel.java                 # Reporting GUI panel
-├── HeapVisualizationPanel.java      # Heap visualization GUI panel
-├── HospitalBedAllocator.java        # Core allocation logic
-├── MinHeap.java                     # Min-Heap implementation for priority queue
-├── Patient.java                     # Patient data model
-├── Bed.java                         # Bed data model
-├── DataPersistence.java             # File-based data storage
+├── model/                           # Data model classes
+│   ├── Patient.java                 # Patient data model
+│   └── Bed.java                     # Bed data model
+├── view/                            # GUI components and views
+│   ├── HospitalManagementGUI.java   # Main GUI entry point with tabbed interface
+│   ├── PatientManagementPanel.java  # Patient management GUI panel
+│   ├── BedManagementPanel.java      # Bed management GUI panel
+│   ├── ReportPanel.java             # Reporting GUI panel
+│   └── HeapVisualizationPanel.java  # Heap visualization GUI panel
+├── controller/                      # Business logic and controllers
+│   ├── HospitalBedAllocator.java    # Core allocation logic
+│   ├── MinHeap.java                 # Min-Heap implementation for priority queue
+│   └── DataPersistence.java         # File-based data storage
 ├── run.sh                           # Linux/Mac/Git Bash run script for GUI
 ├── run.bat                          # Windows batch run script for GUI
 ├── .gitignore                       # Git ignore file

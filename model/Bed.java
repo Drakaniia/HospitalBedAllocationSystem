@@ -1,3 +1,5 @@
+package model;
+
 public class Bed {
     private int bedId;
     private String location; // e.g., "ICU-101", "Ward-A-001"
