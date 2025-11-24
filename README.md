@@ -91,7 +91,12 @@ HospitalBedAllocationSystem/
 ├── DataPersistence.java             # File-based data storage
 ├── run.sh                           # Linux/Mac/Git Bash run script for GUI
 ├── run.bat                          # Windows batch run script for GUI
-└── README.md                        # Project documentation
+├── .gitignore                       # Git ignore file
+├── CONTRIBUTING.md                  # Contribution guidelines
+├── LICENSE                          # Project license
+├── GITHUB_SETUP.md                  # GitHub setup instructions
+├── README.md                        # Project documentation
+└── README_backup.md                 # Backup of original README
 ```
 
 ## How to Use
