@@ -20,38 +20,9 @@ A comprehensive GUI hospital bed allocation system using Min-Heap for priority s
 - Java 8 or higher
 - VSCode with Java extensions (Extension Pack for Java recommended)
 
-## How to Run in VSCode
+## How to Run
 
-### Method 1: Using VSCode Java Extension
-
-1. Open VSCode
-2. Open the folder containing the hospital management system files
-3. VSCode should automatically detect the Java project
-4. In the Explorer panel, right-click on `HospitalManagementGUI.java`
-5. Select "Run Java" or "Run Code" from the context menu
-6. The GUI application will start in a new window
-
-### Method 2: Using Terminal in VSCode
-
-1. Open VSCode and the project folder
-2. Open the integrated terminal: `Ctrl + `` (backtick) or `View > Terminal`
-3. Compile all Java files:
-   ```bash
-   javac *.java
-   ```
-4. Run the GUI system:
-   ```bash
-   java HospitalManagementGUI
-   ```
-
-### Method 3: Using VSCode Run and Debug
-
-1. Open VSCode and the project folder
-2. Press `Ctrl + Shift + P` to open the command palette
-3. Type "Java: Run Projects" and select it
-4. Select `HospitalManagementGUI.java` to run
-
-### Method 4: Using the Run Scripts (Recommended)
+### Method 1: Using the Run Script (Recommended)
 
 The project includes convenient run scripts that compile and run the GUI system in one command:
 
@@ -66,6 +37,11 @@ The project includes convenient run scripts that compile and run the GUI system 
    ./run.sh
    ```
 
+To run the application directly from the command line:
+```bash
+bash run.sh
+```
+
 #### For Windows Command Prompt:
 1. Open the integrated terminal in VSCode: `Ctrl + `` (backtick) or `View > Terminal`
 2. Run the batch file:
@@ -74,6 +50,35 @@ The project includes convenient run scripts that compile and run the GUI system 
    ```
 
 Both scripts will automatically compile all Java files and run the GUI Hospital Management System with appropriate messages and error checking.
+
+### Method 2: Using VSCode Java Extension
+
+1. Open VSCode
+2. Open the folder containing the hospital management system files
+3. VSCode should automatically detect the Java project
+4. In the Explorer panel, right-click on `HospitalManagementGUI.java`
+5. Select "Run Java" or "Run Code" from the context menu
+6. The GUI application will start in a new window
+
+### Method 3: Using Terminal in VSCode
+
+1. Open VSCode and the project folder
+2. Open the integrated terminal: `Ctrl + `` (backtick) or `View > Terminal`
+3. Compile all Java files:
+   ```bash
+   javac *.java
+   ```
+4. Run the GUI system:
+   ```bash
+   java HospitalManagementGUI
+   ```
+
+### Method 4: Using VSCode Run and Debug
+
+1. Open VSCode and the project folder
+2. Press `Ctrl + Shift + P` to open the command palette
+3. Type "Java: Run Projects" and select it
+4. Select `HospitalManagementGUI.java` to run
 
 ## Project Structure
 
