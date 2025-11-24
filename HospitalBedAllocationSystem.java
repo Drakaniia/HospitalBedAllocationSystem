@@ -1,3 +1,7 @@
+import controller.HospitalBedAllocator;
+import model.Patient;
+import model.Bed;
+
 public class HospitalBedAllocationSystem {
     public static void main(String[] args) {
         // Create allocator system
