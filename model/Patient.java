@@ -73,8 +73,15 @@ public class Patient implements Comparable<Patient> {
 
     public void setDischarged(boolean discharged) {
         this.discharged = discharged;
-        if (discharged) {
+        if (discharged && this.dischargeTime == -1) { // Only set if not already set
             this.dischargeTime = System.currentTimeMillis();
+        }
+    }
+
+    public void setDischargeTime(long dischargeTime) {
+        this.dischargeTime = dischargeTime;
+        if (dischargeTime > 0) {
+            this.discharged = true; // Mark as discharged if a discharge time is set
         }
     }
 

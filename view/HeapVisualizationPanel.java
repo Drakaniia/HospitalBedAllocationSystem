@@ -3,10 +3,8 @@ package view;
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
-import controller.HospitalBedAllocator;
 import controller.MinHeap;
 import model.Patient;
-import model.Bed;
 
 public class HeapVisualizationPanel extends JPanel {
     private controller.HospitalBedAllocator allocator;
@@ -134,7 +132,7 @@ public class HeapVisualizationPanel extends JPanel {
 class HeapVisualizationCanvas extends JPanel {
     private controller.HospitalBedAllocator allocator;
     private controller.MinHeap heap;
-    private List<model.Patient> heapList;
+    private List<Patient> heapList;
 
     public HeapVisualizationCanvas(controller.HospitalBedAllocator allocator) {
         this.allocator = allocator;
@@ -185,7 +183,6 @@ class HeapVisualizationCanvas extends JPanel {
         int leftChildIndex = 2 * index + 1;
         int rightChildIndex = 2 * index + 2;
         
-        int levelWidth = (int) Math.pow(2, level + 1);
         int newHSpacing = Math.max(30, hSpacing / 2);
         
         if (leftChildIndex < heapList.size()) {

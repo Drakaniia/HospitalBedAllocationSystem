@@ -92,4 +92,12 @@ public class Bed {
                 ", assignedPatient=" + (assignedPatient != null ? assignedPatient.getPatientId() : "None") +
                 '}';
     }
+
+    // Method to set the occupied status directly, useful for loading from data files
+    public void setOccupied(boolean occupied) {
+        this.occupied = occupied;
+        if (!occupied) {
+            this.assignedPatient = null; // Clear assigned patient if bed is no longer occupied
+        }
+    }
 }
